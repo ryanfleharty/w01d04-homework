@@ -58,3 +58,17 @@ const calculateSide = function(sideA, sideB)
 console.log(calculateSide(8, 6));
 
 
+const sumArray = function(arr)
+{
+	let total = 0;
+
+	arr.forEach(
+	function(a)
+	{
+		total = total + a;
+	});
+	return total;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
