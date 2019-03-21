@@ -22,10 +22,23 @@
 
 //Digit Sum
 //3.
+const sumDigits = (num) => {
+    let sumTotal = 0;
+    let newStr = num.toString().split(" ", 3);
+    for (var i = 0; i < newStr.length; i ++) {
+       let converted = parseInt(newStr[i]);
+       sumTotal += converted;
+    }
+    return sumTotal;
+}
+sumDigits(42);
+console.log(sumDigits(42));
+
+    
 
 //Pythagoras
 //4.
-const calculateSide = (a, b) => {
+/*const calculateSide = (a, b) => {
     return(Math.sqrt((a * a) + (b * b)))
 }
 calculateSide(8, 6);
@@ -53,4 +66,4 @@ const printPrimes = (num) => {
     checkPrime(i);
 }
 }
-console.log(printPrimes(97));
+console.log(printPrimes(97)); */
