@@ -9,10 +9,23 @@ console.log("Running");
 
 // 3. For a user to input values. Ex. To calculate(add or subtract) and to recieve a return value that was the result of the inputs. 
 
-const checkPalindrome = (string) => {
-    const splitPalindrome = string.split('');
-    const reverse = splitPalindrome.reverse();
-    const reversePalindrome = reverse.join();
-    return reversePalindrome
+// const checkPalindrome = (string) => {
+//     const splitPalindrome = string.split('');
+//     const reverse = splitPalindrome.reverse();
+//     const reversePalindrome = reverse.join();
+//     return reversePalindrome
+// }
+// console.log(checkPalindrome("Radar"));
+
+
+
+const sumDigits = (int) => {
+    let total = int
+    let sum = 0;
+while (total) {
+    sum += total % 10;
+    total = Math.floor(total / 10);
+    
 }
-console.log(checkPalindrome("Radar"));
+    return sum
+}
