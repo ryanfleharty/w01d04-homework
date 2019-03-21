@@ -37,6 +37,22 @@ console.log(checkPalindrome('borscht'));
 		//return false
 //}
 
+//Digit Sum
+
+const sumDigits = (number) => {
+	let singleNumber = number.toString();
+	let newNumber = singleNumber.split('');
+	let sum = 0;
+	for(let i = 0; i < newNumber.length; i++){
+	let newInteger = parseInt(newNumber[i]);
+	sum += newInteger;
+	}
+	return sum;
+		}
+
+
+console.log(sumDigits(42));
+
 
 
 
