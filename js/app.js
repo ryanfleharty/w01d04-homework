@@ -12,6 +12,40 @@ console.log('Up and running');
 
 // 2. Palindrome again.
 // Write a function checkPalindrome that accepts a single argument, a string. Yes, you've done it before, but do it again. Later in this assignment we're gonna beef up our palindrome function some. See if you can do it without looking back at your previous answer. The function should return true if the string is a palindrome, false if not. Make sure your function will give the correct answer for words with capital letters.
-const checkPalindrome == (str) => {
+const checkPalindrome = (str) => {
+  const strRevArr = [];
+  let strReversed = '';
+  for (let i = 0; i < str.length; i++) {
+    strRevArr[(str.length - 1) - i] = str[i];
+  }
+  strRev = strRevArr.join('');
 
-}
+  console.log(str);
+  console.log(strRev);
+  if (str === strRev) {
+    console.log(true);
+    return true;
+  }
+  console.log(false);
+  return false;
+};
+
+checkPalindrome('cool');
+checkPalindrome('racecar');
+
+//or alternatively and more succintly
+const checkPalindromeClean = (str) => {
+  let strRev = str.split('').reverse().join('');
+
+  console.log(str);
+  console.log(strRev);
+  if (str === strRev) {
+    console.log(true);
+    return true;
+  }
+  console.log(false);
+  return false;
+};
+
+checkPalindromeClean('cool');
+checkPalindromeClean('racecar');
