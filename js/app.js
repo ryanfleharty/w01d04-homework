@@ -29,3 +29,13 @@ while (total) {
 }
     return sum
 }
+
+//4.
+
+const calculateSide = (sideA, sideB) => {
+        if ((typeof sideA !== 'number') || (typeof sideB !== 'number')) 
+return false; 
+		return Math.sqrt(sideA * sideA + sideB * sideB);
+}
+
+
