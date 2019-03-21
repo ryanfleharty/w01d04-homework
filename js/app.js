@@ -73,7 +73,43 @@ const sumArray = (arr) => {
 	return sum;
 }
 
-console.log(sumArray([8, 2, 3, 4, 5, 6]));
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+//Prime Numbers
+
+//part 1
+//const checkPrime = (num) => {
+	//if(Math.sqrt(num) % 1 === 0){
+		//return true;
+	//} else {
+	//	return false;
+	//}
+//}
+
+//console.log(checkPrime(21));
+
+const checkPrime = (num) => {
+	for(let i = 2; i < num; i++){
+		if(num % i === 0){
+			return false;
+		}
+	}
+	return num > 1;
+}
+
+console.log(checkPrime(5));
+
+const printPrimes = (limit) => {
+	for(let i = 0; i < limit; i++){
+		let prime = checkPrime(i);
+		if(prime){
+			console.log(i);
+		} 
+	}
+}
+
+printPrimes(70);
+
 
 
 
