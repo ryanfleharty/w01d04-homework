@@ -19,3 +19,24 @@ console.log('i am loaded');
 //   to do stuff. This allows you to use functions in other functions and in other 
 //places around the page. 
 
+
+//2. Palindrome Again
+//   Write a function checkPalindrome that accepts a single arg, a string. Function should return 
+//   true if a string is a palindrome, false if not. Make sure it still works with capital letters. 
+
+
+const checkPalindrome = (str) => {
+    let capStr = str.toUpperCase();
+    for (let i = 0; i < capStr.length; i++) {
+        if(capStr[i] !== capStr[capStr.length -1 -i]){
+            return false;
+        } else {
+            return true;
+        }
+    }
+}; 
+
+
+console.log(checkPalindrome('racEcaR'));
+
+
