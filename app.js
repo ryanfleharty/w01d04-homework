@@ -39,9 +39,20 @@ console.log("Homework page ready!")
 // console.log(sumDigits(34));
 
 // Pythagoras Theorem = a^2 + b^2 = c^2
-const calculateSide = (sideA, sideB) => {
-let sideC = sideA**2 + sideB**2;
-return sideC;
-}
+// const calculateSide = (sideA, sideB) => {
+// let sideC = sideA**2 + sideB**2;
+// return sideC;
+// }
 
-console.log(calculateSide(1, 2));
+// console.log(calculateSide(1, 2));
+
+// // Sum Array
+// const sumArray = (arr) => {
+//     let sum = 0;
+//     for (i = 0; i < arr.length; i++) {
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+// }
+
+// console.log(sumArray([1, 2, 3]));
