@@ -47,3 +47,14 @@ const sumDigits = function(x)
 }
 
 console.log(sumDigits(42));
+
+
+const calculateSide = function(sideA, sideB)
+{
+	//Pythagorean theorem: find hypotenuse
+	return Math.sqrt((sideA ** 2) + (sideB ** 2));
+}
+
+console.log(calculateSide(8, 6));
+
+
