@@ -32,9 +32,25 @@ calculateSide(8, 6);
 console.log(calculateSide(8, 6));
 
 //Sum Array
-//5.       //Remember to practice more with .reduce() 
+//5.       //Remember to practice more with .reduce() (Delete before push)
 const sumArray = [1, 2, 3, 4, 5, 6].reduce(add);
 function add(accumulator, x) {
     return accumulator + x;
 }
 console.log(sumArray);
+//Prime Numbers 
+//Step One //remember to use backticks not quotes idiot (Delete before push)
+    
+var arr = [1, 22, 8, 5, 7, 11, 13, 2, 3, 5, 7, 11, 13, 17, 19, 23];
+const checkPrime = (num) => {
+    if(Math.sqrt(num) % 1 === 0) {
+      console.log(`${num}`);
+    }
+}
+//Step Two
+const printPrimes = (num) => {
+    for (i = 0; i <= num; i++){
+    checkPrime(i);
+}
+}
+console.log(printPrimes(97));
