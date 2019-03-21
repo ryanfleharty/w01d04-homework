@@ -48,9 +48,7 @@ const sumDigits = (num) => {
     let sum = 0;
     
     for (let i = 0; i < stringNum.length; i++){   
-    //this line takes prev val of sum from each loop and adds the i+1 value to it, 
-    //reassigning the sum value so its ready for the next iteration
-    sum = sum + parseInt(stringNum.substring(i, i+1));
+    sum = sum + parseInt(stringNum[i]);
     }
     console.log(sum);
 }
@@ -58,4 +56,3 @@ const sumDigits = (num) => {
 sumDigits(1234);
 
 
-//4. 
