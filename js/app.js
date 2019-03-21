@@ -72,3 +72,31 @@ const sumArray = function(arr)
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
+
+
+
+const checkPrime = function(x)
+{
+	//Checks whether x is prime or not
+	for (let i = 2; i <= Math.sqrt(x); i++)
+	{
+		if (!(x % i))
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+
+const printPrimes = function(x)
+{
+	//Prints all of the prime numbers up to x
+
+	for (let i = 1; i <= x; i++)
+	{
+		if (checkPrime(i)) {console.log(i);}
+	}
+}
+
+printPrimes(97);
