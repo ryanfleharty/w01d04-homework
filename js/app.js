@@ -50,9 +50,23 @@ const sumDigits = (num) => {
     for (let i = 0; i < stringNum.length; i++){   
     sum = sum + parseInt(stringNum[i]);
     }
-    console.log(sum);
-}
+};
 
 sumDigits(1234);
+
+//4. Pythagoras 
+//Write a function calculateSide that takes two arguments: sideA and sideB, 
+//and returns the solution for sideC using the Pythagorean theorem.
+// a squared + b squared = c squared
+
+const calculateSide = (sideA, sideB) => {
+    let sideC = Math.pow(sideA, 2) + Math.pow(sideB, 2);
+    return sideC;
+}
+
+console.log(calculateSide(2, 5)); 
+
+
+
 
 
