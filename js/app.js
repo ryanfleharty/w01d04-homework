@@ -32,9 +32,9 @@ calculateSide(8, 6);
 console.log(calculateSide(8, 6));
 
 //Sum Array
-//5.
-var numbers = ([1, 2, 3, 4, 5]);
-function sumArray(sum, num) {
-    for (i = 0; i < num.length; i++) {
-        return sum + num;
-    }
+//5.       //Remember to practice more with .reduce() 
+const sumArray = [1, 2, 3, 4, 5, 6].reduce(add);
+function add(accumulator, x) {
+    return accumulator + x;
+}
+console.log(sumArray);
