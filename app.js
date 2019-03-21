@@ -22,18 +22,26 @@ console.log("Homework page ready!")
 //   checkPalindrome("mom");
 
 // Digital Sum 
-const sumDigits = (num) => { // setting function and parameter type
- let numArray = num.toString().split("").map(Number); // setting variable for 
- // the argument and transforming it into split chars, then split numbers in an array
+// const sumDigits = (num) => { // setting function and parameter type
+//  let numArray = num.toString().split("").map(Number); // setting variable for 
+//  // the argument and transforming it into split chars, then split numbers in an array
 
- let sum = 0; // setting up placeholder for total digits sum
+//  let sum = 0; // setting up placeholder for total digits sum
 
-    for (i = 0; i < numArray.length; i++) { //setting up for loop to cycle through all
-        // integers in numbers array
-        sum = sum + numArray[i]; // redefining sum as the total of the prior loop added to the current i
+//     for (i = 0; i < numArray.length; i++) { //setting up for loop to cycle through all
+//         // integers in numbers array
+//         sum = sum + numArray[i]; // redefining sum as the total of the prior loop added to the current i
         
-    }
-    return sum; // output the total once the loop is finished
+//     }
+//     return sum; // output the total once the loop is finished
+// }
+
+// console.log(sumDigits(34));
+
+// Pythagoras Theorem = a^2 + b^2 = c^2
+const calculateSide = (sideA, sideB) => {
+let sideC = sideA**2 + sideB**2;
+return sideC;
 }
 
-console.log(sumDigits(34));
+console.log(calculateSide(1, 2));
