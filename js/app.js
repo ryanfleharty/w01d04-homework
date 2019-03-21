@@ -29,3 +29,21 @@ const checkPalindrome = function(s)
 
 console.log(checkPalindrome("Radar"));
 console.log(checkPalindrome("Borscht"));
+
+
+const sumDigits = function(x)
+{
+	//This functions accepts a number and returns the sum of its digits.
+
+	let s = "" + x;
+	
+	let total = 0;
+
+	for (let i = 0; i < s.length; i++)
+	{
+		total = total + parseInt(s[i]);
+	}
+	return total;
+}
+
+console.log(sumDigits(42));
