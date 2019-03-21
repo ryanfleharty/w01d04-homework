@@ -53,6 +53,17 @@ const sumDigits = (number) => {
 
 console.log(sumDigits(42));
 
+//Pythagoras
+
+const calculateSide = (sideA, sideB) => {
+	let sideCSquare = (((sideA * sideA) + (sideB * sideB)));
+	//console.log(sideCSquare);
+	return Math.sqrt(sideCSquare);
+}
+
+console.log(calculateSide(8,6));
+
+//
 
 
 
