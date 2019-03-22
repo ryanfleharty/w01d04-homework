@@ -82,3 +82,30 @@ const sumArray = (arr) => {
 
 console.log(sumArray([1, 2, 3, 4]));
 
+
+//6. Prime Numbers
+// Prime numbers are only divisible by 1 and itself. 
+
+const checkPrime = (num) => {
+    for(let i = 2; i < num; i++){
+        if(num % i === 0) {
+            return false;
+        } 
+    }
+    return num > 1;
+}
+
+console.log(checkPrime(9));
+
+
+
+const printPrimes = (limit) => {
+    for(i=0; i <= limit; i++){
+        if(checkPrime(i) === true){
+            console.log(i);
+        }
+    }
+}
+
+printPrimes(250);
+
