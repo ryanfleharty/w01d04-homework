@@ -1,4 +1,4 @@
-console.log('Up and running');
+/*console.log('Up and running');
 
 // 1. Verbal questions
 // Write answers to the following questions as comments.
@@ -89,4 +89,42 @@ const sumArray = (arr) => {
   return (sum);
 };
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+console.log(sumArray([1, 2, 3, 4, 5, 6]));*/
+
+// 6. Prime Numbers
+// A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, go here. To test whether a number is Prime, you only need to test as far as the square root of that number. This is advisable for optimization and testing large numbers.
+
+// Step One
+// Write a function called checkPrime that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not. Hint: Check every number up to the square root. To do this, try a for loop.
+const checkPrime = (num) => {
+  const sqRootOfNum = Math.sqrt(num);
+  let primeFlag = true;
+
+  if (num === 1) {
+    primeFlag = false; // 1 is not a prime number
+  }
+  else if (num === 2 || num === 3) {
+    // skip to end because 2 and 3 are prime numbers and are not caught in else
+  } else {
+    for (let i = 2; i <= sqRootOfNum; i++) {
+      if (num % i === 0) {
+        //console.log(`${num} is evenly divisible by ${i} and is not prime`);
+        primeFlag = false;
+        break;
+      }
+    }
+  }
+  return (primeFlag);
+};
+//console.log(checkPrime(25));
+
+// Step Two
+// Write another function called printPrimes that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with printPrimes(97), it will print all the Prime numbers up to and including 97. This function can call on the previous checkPrime function.
+const printPrimes = (limit) => {
+  for (let i = 1; i < limit; i++) {
+    if (checkPrime(i)) {
+      console.log(i);
+    }
+  }
+};
+printPrimes(97);
