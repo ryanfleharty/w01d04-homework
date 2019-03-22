@@ -15,8 +15,23 @@
 //will return default (undefined).
 
 //Palindrome again 
-//2.
-
+//2.  //Regular expression are patterns used to match combinations in " "
+// also they are objects. (delete before push)
+const checkPalindrome = (str) => {
+    var reg = /[\W_]/g;
+    str = str.toUpperCase().replace(reg, '');
+    var len = str.length;
+    for ( var i = 0; i <len/2; i++) {
+        if (str[i] !== str[len - 1 - 1]) {
+            return false;
+        }
+        return true;
+    }
+    
+}
+checkPalindrome("radar");
+console.log(checkPalindrome("radar"));
+console.log(checkPalindrome("Borscht"));
 
 //
 
@@ -38,7 +53,7 @@ console.log(sumDigits(42));
 
 //Pythagoras
 //4.
-/*const calculateSide = (a, b) => {
+const calculateSide = (a, b) => {
     return(Math.sqrt((a * a) + (b * b)))
 }
 calculateSide(8, 6);
@@ -66,4 +81,4 @@ const printPrimes = (num) => {
     checkPrime(i);
 }
 }
-console.log(printPrimes(97)); */
+console.log(printPrimes(97)); 
