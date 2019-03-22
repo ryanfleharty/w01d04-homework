@@ -9,13 +9,13 @@ console.log("Running");
 
 // 3. For a user to input values. Ex. To calculate(add or subtract) and to recieve a return value that was the result of the inputs. 
 
-// const checkPalindrome = (string) => {
-//     const splitPalindrome = string.split('');
-//     const reverse = splitPalindrome.reverse();
-//     const reversePalindrome = reverse.join();
-//     return reversePalindrome
-// }
-// console.log(checkPalindrome("Radar"));
+const checkPalindrome = (string) => {
+    const splitPalindrome = string.split('');
+    const reverse = splitPalindrome.reverse();
+    const reversePalindrome = reverse.join();
+    return reversePalindrome
+}
+console.log(checkPalindrome("Radar"));
 
 
 
@@ -41,7 +41,7 @@ calculateSide();
 
 //5.
 
-let int = [];
+
 const sumArray = (int) => {
     let total = 0
     for(let i=0;i<int.length;i++) {                  
@@ -51,5 +51,21 @@ const sumArray = (int) => {
  }
 sumArray();
 
+// 6.
 
-
+const checkPrime = (num) => {
+    if(num / 1 && num / num) {
+        return true;
+    } else {
+        return false;
+    }
+}
+checkPrime();
+const printPrime = (checkPrime) => {
+    for (let i = 1; i < checkPrime(); i++) {
+       if (i / 1 && i / i) {
+        console.log(i);
+       } 
+    }
+}
+// can't figure out how to call checkPrime into the printPrime function to log the primes counting up. 
