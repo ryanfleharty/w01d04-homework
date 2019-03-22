@@ -13,7 +13,7 @@
 //This algorithm is based on the first example provided by https://medium.freecodecamp.org/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7
 //It's complicated, but I understand the steps. I think it's just a matter of knowing how the methods combine. The replace method is particularly helpful. Notice how you can change a string to lower case and have it replace the string created by the previous method. Same applies to split, reverse, and join.
 //QUESTIONS: why the quote marks?
-
+/**
 const checkPalindrome = (str) => {
   const regExp = /[\W_]/g;
   const lowerCaseStr = str.toLowerCase().replace(regExp, '');
@@ -22,3 +22,18 @@ const checkPalindrome = (str) => {
 }
 
 console.log(checkPalindrome("Radar"));
+**/
+
+//Digit Sum: I need to split the numbers in a string into distinct arrays. I need to split
+
+//Important note: in the split function, if the separator is empty, which is signified by empty quotes with no space between them, all of the elements in the string are split. This first argument is the separator. If it's empty, (''), then every character is split.
+
+const sumDigits = (num) => {
+  const digits = num.toString().split('').map(Number);
+  let sum = 0;
+  for (var i = 0; i < digits.length; i++) {
+    sum += digits[i]
+  } return sum;
+}
+
+console.log(sumDigits(1234));
