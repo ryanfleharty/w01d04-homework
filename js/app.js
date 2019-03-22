@@ -78,3 +78,64 @@ const calculateSide = (sideA, sideB) => {
 calculateSide(8, 6);
 
 
+
+//5. Sum Array
+//Write a function sumArray that takes an array as an argument. The array 
+//should contain numbers. The function should return the sum of the numbers 
+//in the array.
+//Expected result: console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// WHY ISN'T THIS WORKING? SAME ISSUE AS #3.
+
+const sumArray = (arr) => {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+      total += arr[i]
+    }
+}
+
+sumArray(1, 2, 3, 4, 5, 6);
+
+
+//6. Prime Numbers
+//A Prime number is a number that is not evenly divisible by 
+//another number except 1 and itself. If you want to read more 
+//deeply about it, go here. To test whether a number is Prime, 
+//you only need to test as far as the square root of that number. 
+//This is advisable for optimization and testing large numbers.
+
+//Step One
+//Write a function called checkPrime that will test whether a 
+//number is Prime. The function will return true (Boolean) if 
+//Prime, false if not. Hint: Check every number up to the square 
+//root. To do this, try a for loop.
+
+
+const checkPrime = (num) => {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return num > 1;
+}
+
+console.log(checkPrime(7));
+console.log(checkPrime(42));
+
+//Step Two
+//Write another function called printPrimes that will print 
+//(console log) all the Primes up to an arbitrary limit. For 
+//example, if you invoke your function with printPrimes(97), 
+//it will print all the Prime numbers up to and including 97. 
+//This function can call on the previous checkPrime function.
+//I JUST DON'T KNOW WHY THIS ISN'T WORKING. EVERYTHING I CAN 
+//THINK TO GOOGLE SAYS SIMILAR OR WAY MORE COMPLICATED.
+
+const printPrimes = (num) => {
+    //check for prime
+    //if prime, print
+    if (checkPrime(true)) {
+        console.log(num);
+    }
+}
+printPrimes(21);
