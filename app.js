@@ -47,3 +47,19 @@ const calculateSide = (sideA, sideB) => { //creating a functions
   return c// returning outputc
 }
 console.log(calculateSide(8,6));
+
+// Sum array
+const sumArray = (array) => {
+  let arr = array
+  let sum = 0
+  for(let i = 0; i < arr.length; i++)
+    sum += arr[i]
+  return sum
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// create a function
+// declare variable to store Array
+//declare variable for sum
+//create a loop to loop through Array
+//adding the elements to the sum
+//return sum of numbers in array
