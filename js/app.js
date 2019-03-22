@@ -2,18 +2,18 @@
 
 // // Write answers to the following questions as comments. 
 
-1. What is the difference between a **parameter** and an **argument**?
-    A parameter or multiple parameters are set when the function is declared. 
-    It tells the function what type of arguments to accept. 
-    Aurguments are the input entered when the function is called.
+// 1. What is the difference between a **parameter** and an **argument**?
+//     A parameter or multiple parameters are set when the function is declared. 
+//     It tells the function what type of arguments to accept. 
+//     Aurguments are the input entered when the function is called.
 
-2. Within a function, what is the difference between **return** and **console.log**?
-    return produces a value that must be stored or passed.
-    console.log is used to track outputs by loging them to the console.
-3. What are the implications of the ability of a function to return a value?
-    the returned value can be passed to another function as an aurgument 
-    or stored in a variable to be used in other parts of your program.
-// // // <hr>
+// 2. Within a function, what is the difference between **return** and **console.log**?
+//     return produces a value that must be stored or passed.
+//     console.log is used to track outputs by loging them to the console.
+// 3. What are the implications of the ability of a function to return a value?
+//     the returned value can be passed to another function as an aurgument 
+//     or stored in a variable to be used in other parts of your program.
+// // // // <hr>
 // // &#x1F534; **Commit your work.** <br>
 // // The commit message should read: <br>
 // // "Commit 1 - Verbal questions".
@@ -23,20 +23,21 @@
 // //## 2. Palindrome again.
 // //Write a function `checkPalindrome` that accepts a single argument, a string.Yes, you've done it before, but do it again. Later in this assignment we're gonna beef up our palindrome function some.See if you can do it without looking back at your previous answer.The function should return true if the string is a palindrome, false if not.Make sure your function will give the correct answer for words with ** capital letters **.
 
-//declare the function and perameter
-// const checkPalindrome = (str) => {
-// //loop though the string
-//        for(let i = 0; i < str.length; i++){
-// //check if the value at the looped index position is equal to the value at the mirrored position in the array  
-//             if (str[i] === str[i].length - 1 - str[i])
-//                 {console.log("it's a palindrome!")
-//             }
 
-//             else { console.log ('sorry, not a palindrome')
-// }   }   }
-// //if true store in variable pass
+const checkPalindrome = (str) => {
+//loop though the string
+       for(let i = 0; i < str.length; i++){
+//check if the value at the looped index position is equal to the value at the mirrored position in the array  
+            if (i === [str.length-1] - [i])
+                {console.log("it's a palindrome!")
+            }
 
-//checkPalindrome("racecar")
+            else { console.log ('sorry, not a palindrome')
+}   }   }
+//I know that each letter in a string has an assigned value. I am mixing up the value of i with the value of the letter @ i,
+//STILL WORKING ON THIS ONE BUT I THINK IM CLOSE
+
+// checkPalindrome("racecar")
 
 // ## 3. Digit Sum
 // //Write a function sumDigits that accepts a number and returns the sum of its digits.
