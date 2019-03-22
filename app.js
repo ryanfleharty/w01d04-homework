@@ -35,3 +35,15 @@ const sumDigits = (digits) => { // creating a function
   return sum//returning sum
 }
 console.log(sumDigits(5678));
+
+//Pythagoras
+const calculateSide = (sideA, sideB) => { //creating a functions
+  let a = sideA// declaring variablefor sideA
+  let b = sideB//declaring a variable for sideB
+  let a2 = a * a//declaring a variable for a * a
+  let b2 = b * b//declaring a variable for b * b
+  let c2 = a2 + b2 //declaring a variable for a2 + b2
+  let c = Math.sqrt(c2); //declaring a variable for square root of c
+  return c// returning outputc
+}
+console.log(calculateSide(8,6));
