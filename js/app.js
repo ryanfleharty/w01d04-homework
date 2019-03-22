@@ -11,7 +11,7 @@
 // can also be used and reffered back to many times, as long as its invoked.
 
 
-//Palindrome 
+//2. Palindrome 
 function checkPalindrome(str) {
 if (str == str.split(''). reverse().join('')
 	return true;
@@ -23,11 +23,13 @@ checkPalindrome("trashcan");
 checkPalindrome("racecar");
 
 
-//Digit sum
-const sumDigits = 
+//3 Digit sum
+const sumDigits = (num) => {
 
-
-
+return (num - 1) % 9 +1;
+}  
+console.log(sumDigits(42));
+=> 6;
 
 
 
@@ -38,3 +40,9 @@ return Math.floor(Math.sqrt((a * a) + (b * b)))
 
 calcuteSide(4,5);
 
+//5. sum array
+const arr = [1, 2, 3, 4, 5, 6];
+const sumArray = (a, b) => a + b
+
+const sum = arr.reduce(sumArray);
+console.log(sum);
