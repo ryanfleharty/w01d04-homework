@@ -29,7 +29,7 @@ while (total) {
 }
     return sum
 }
-
+sumDigits();
 //4.
 
 const calculateSide = (sideA, sideB) => {
@@ -37,5 +37,19 @@ const calculateSide = (sideA, sideB) => {
 return false; 
 		return Math.sqrt(sideA * sideA + sideB * sideB);
 }
+calculateSide();
+
+//5.
+
+let int = [];
+const sumArray = (int) => {
+    let total = 0
+    for(let i=0;i<int.length;i++) {                  
+        total += Number(int[i]);
+             }
+        return total;
+ }
+sumArray();
+
 
 
