@@ -27,7 +27,7 @@ console.log(checkPalindrome("Radar"));
 //Digit Sum: I need to split the numbers in a string into distinct arrays. I need to split
 
 //Important note: in the split function, if the separator is empty, which is signified by empty quotes with no space between them, all of the elements in the string are split. This first argument is the separator. If it's empty, (''), then every character is split.
-
+/**
 const sumDigits = (num) => {
   const digits = num.toString().split('').map(Number);
   let sum = 0;
@@ -37,9 +37,9 @@ const sumDigits = (num) => {
 }
 
 console.log(sumDigits(1234));
-
+**/
 //Write a function calculateSide that takes two arguments: sideA and sideB, and returns the solution for sideC using the Pythagorean theorem.
-
+/**
 const calculateSide = (side1, side2) => {
   let sideKinda = (side1 * side1) + (side2 * side2);
   let side3 = Math.sqrt(sideKinda);
@@ -47,3 +47,16 @@ const calculateSide = (side1, side2) => {
 }
 
 console.log(calculateSide(8,6));
+**/
+
+//SUM array
+// Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array.
+
+const sumArray = (arr) => {
+  let sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i]
+  } return sum;
+}
+
+console.log(sumArray([1,2,3,4]));
