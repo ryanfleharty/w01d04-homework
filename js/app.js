@@ -24,36 +24,39 @@
 // //Write a function `checkPalindrome` that accepts a single argument, a string.Yes, you've done it before, but do it again. Later in this assignment we're gonna beef up our palindrome function some.See if you can do it without looking back at your previous answer.The function should return true if the string is a palindrome, false if not.Make sure your function will give the correct answer for words with ** capital letters **.
 
 
-const checkPalindrome = (str) => {
-//loop though the string
-       for(let i = 0; i < str.length; i++){
-//check if the value at the looped index position is equal to the value at the mirrored position in the array  
-            if (i === [str.length-1] - [i])
-                {console.log("it's a palindrome!")
-            }
+// const checkPalindrome = (str) => {
+// //loop though the string
+//        for(let i = 0; i < str.length; i++){
+// //check if the value at the looped index position is equal to the value at the mirrored position in the array  
+//             if (i === [str.length-1] - [i])
+//                 {console.log("it's a palindrome!")
+//             }
 
-            else { console.log ('sorry, not a palindrome')
-}   }   }
+//             else { console.log ('sorry, not a palindrome')
+// }   }   }
 //I know that each letter in a string has an assigned value. I am mixing up the value of i with the value of the letter @ i,
 //STILL WORKING ON THIS ONE BUT I THINK IM CLOSE
 
 // checkPalindrome("racecar")
 
-// ## 3. Digit Sum
-// //Write a function sumDigits that accepts a number and returns the sum of its digits.
-// const sumDigits = (num) => {
-//     let numToString = num.toString()
-//     for (let i = 0; i< numToString.length; i++){
-//          return parseInt(numToString[i] + [i])}
-// }
+//## 3. Digit Sum
+//Write a function sumDigits that accepts a number and returns the sum of its digits.
+const sumDigits = (num) => {
+    const numToString = (num.toString())
+    const totalSum = 0
+    for (let i = 0; i< numToString.length; i++){
+         parseInt(numToString[i]) + totalSum
+        return totalSum
+        }
+}
 // console.log(sumDigits(42))
 
-//
-//for (i = 0; i < splitNum.length; i++) 
-//return splitNum[i]+[i]
-//}
 
-//console.log(sumDigits(42))
+// for (i = 0; i < splitNum.length; i++) 
+// return splitNum[i]+[i]
+// }
+
+// console.log(sumDigits(42))
 
 // ## 4. Pythagoras
 // Write a function `calculateSide` that takes two arguments: `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
