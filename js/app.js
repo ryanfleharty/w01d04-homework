@@ -38,3 +38,43 @@ const checkPalindrom = (str) => {
   }
 
   console.log(checkPalindrom('madams'));
+
+
+
+//3. 3. Digit Sum
+//Write a function sumDigits that accepts a number and returns the 
+//sum of its digits.
+//NOT WORKING
+
+
+let sum = 0;
+
+const sumDigits = (num) => {
+    for (var i = 0; i <= num.length; i++) {
+        sum += num[i];
+      }
+      
+    }
+    
+    console.log(sumDigits(1223));
+
+
+
+//4. Pythagoras
+//Write a function calculateSide that takes two arguments: sideA 
+//and sideB, and returns the solution for sideC using the 
+//Pythagorean theorem.
+//hint: discover the Pythagorean Theorem on a website called 
+//google.com
+//hint: checkout the Math methods in javascript
+//a2 + b2 = c2
+
+const calculateSide = (sideA, sideB) => {
+    let sideC = (sideA * sideA) + (sideB * sideB);
+    console.log(sideC);
+    return sideC;
+}
+
+calculateSide(8, 6);
+
+
