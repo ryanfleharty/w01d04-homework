@@ -63,3 +63,24 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 //create a loop to loop through Array
 //adding the elements to the sum
 //return sum of numbers in array
+
+//prime numbers
+const checkPrime = (num) => {
+  for (i = 2; i < num; i++){
+    if(num % i == 0){
+      return false
+    }
+  }
+return true
+}
+console.log(checkPrime(4));
+
+// step Two
+const printPrime = (num) => {//create function
+  for(let i = 2; i < num; i++){//making loop starting at to and increasing by 1, stops at whatever num is
+    if(checkPrime(i)){// calling checkPrime, if index is prime
+      console.log(i);//printing index
+    }
+  }
+}
+printPrime(97)
