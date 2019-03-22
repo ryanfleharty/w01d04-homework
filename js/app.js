@@ -19,48 +19,71 @@ console.log("hello");
 //false if not. Make sure your function will give the correct answer for words with **capital letters**.
 
 
-    
-// const checkPalindrome = (str) => {
-let str = "alabama";
-let str 2 = strstr.split(" ");
 
- 
-//     for (let i = 0; i < str.length -2; i++) {
-//             if (str[i] !== str[str.length -1 -i]) {
-//                 console.log("false")
-//             } else {
-//                 console.log("true")
-//             }};
-            
-// checkPalindrome();        
+
     
-    //checkPalindrome("whatsupbro");
-    
-    // console.log(checkPalindrome("Radar"));
-    // console.log(checkPalindrome("Borscht"));
-    
-    // ## 3. Digit Sum
-    // Write a function `sumDigits` that accepts a number and returns the sum of its digits.
-    
-    
-    
-    // const sumDigits = (num) => {  
-    //     let strNum = num.toString()                  
-    //     for (let i = 0; i < num.length; i++) {   //MY WORK
-    //         num.toString();
-    // }};
-    
-    
-    // sumDigits(52);
-                                
-    
-    // console.log(sumDigits(42));
-    // => 6;
-    // ```
-    
-    // <hr>
-    // &#x1F534; **Commit your work.** <br>
-    // The commit message should read: <br>
-    // "Commit 3 - Digit Sum".
-    // <hr></hr>
-    
+
+
+let str = "steponnopets";
+let str2 = str.split("").reverse().join();     //this takes a string and adds spaces to it, then reverses its order, then joins the letter back
+for (let i = 0; i < str.length; i++) {
+    if (str[i] !== str[str.length -1 -i]) {
+        console.log("false")
+    } else {
+        console.log("true")
+    }}
+
+// const checkPalindrome = (str) => {
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] !== str[str.length -1 -i]) {
+//             console.log("false")                             // How do I make it run inside of a function?
+//         } else {
+//             console.log("true")
+//         }}
+      
+// checkPalindrome("radar");
+
+
+
+// ## 3. Digit Sum
+// Write a function `sumDigits` that accepts a number and returns the sum of its digits.
+let num = 645;
+
+const sumDigits = () => { 
+    let digits = (""+num).split("")
+  for (let i = 0; i < digits.length; i++) { 
+        digits[i] = +digits[i];}
+    console.log(digits);
+  for (let x = 0; x < digits.length; x++){
+      digitsSum = digits[x] + digits[0] + digits[1] + digits[2];  //NEED TO COUNT X + next value
+  } console.log(digitsSum);
+    }
+
+sumDigits();
+
+
+// "Commit 3 - Digit Sum".
+// <hr></hr>
+
+
+
+// ## 4. Pythagoras
+// Write a function `calculateSide` that takes two arguments: `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
+
+// _hint:_ discover the Pythagorean Theorem on a website called google.com  
+// _hint:_ checkout the [Math methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
+// ```
+
+const calculateSide = (sideA, sideB) => {
+  sideA = Math.pow(sideA,2)
+  sideB = Math.pow(sideB, 2)
+  let sideC = (sideA + sideB)
+  let sideCsqr = Math.sqrt(sideC);
+  console.log(`Side C's length is: ${sideCsqr}`); 
+};
+
+calculateSide(8,6);
+
+
+// "Commit 4 - Pythagoras".
+// <hr>
