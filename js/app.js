@@ -37,3 +37,13 @@ const sumDigits = (num) => {
 }
 
 console.log(sumDigits(1234));
+
+//Write a function calculateSide that takes two arguments: sideA and sideB, and returns the solution for sideC using the Pythagorean theorem.
+
+const calculateSide = (side1, side2) => {
+  let sideKinda = (side1 * side1) + (side2 * side2);
+  let side3 = Math.sqrt(sideKinda);
+  return side3;
+}
+
+console.log(calculateSide(8,6));
