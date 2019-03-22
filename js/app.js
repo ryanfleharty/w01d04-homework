@@ -18,12 +18,6 @@ console.log("hello");
 //looking back at your previous answer. The function should return true if the string is a palindrome, 
 //false if not. Make sure your function will give the correct answer for words with **capital letters**.
 
-
-
-
-    
-
-
 let str = "steponnopets";
 let str2 = str.split("").reverse().join();     //this takes a string and adds spaces to it, then reverses its order, then joins the letter back
 for (let i = 0; i < str.length; i++) {
@@ -62,17 +56,8 @@ const sumDigits = () => {
 sumDigits();
 
 
-// "Commit 3 - Digit Sum".
-// <hr></hr>
-
-
-
 // ## 4. Pythagoras
 // Write a function `calculateSide` that takes two arguments: `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
-
-// _hint:_ discover the Pythagorean Theorem on a website called google.com  
-// _hint:_ checkout the [Math methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
-// ```
 
 const calculateSide = (sideA, sideB) => {
   sideA = Math.pow(sideA,2)
@@ -84,6 +69,26 @@ const calculateSide = (sideA, sideB) => {
 
 calculateSide(8,6);
 
+// ## 5. Sum Array
+// Write a function `sumArray` that takes an **array** as an argument.
+// The array should contain numbers. The function should return the sum of the numbers in the array.
 
-// "Commit 4 - Pythagoras".
+const sumArray = (arr) => {
+    let totalArr = 0
+    for (let i = 0; i < arr.length; i++){
+          totalArr += Number(arr[i]) 
+      } console.log(totalArr)
+        }
+sumArray([1,2,3,4,5,6]);
+
+
+// Expected result:
+// ```javascript
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// => 21
+// ```
 // <hr>
+// &#x1F534; **Commit your work.** <br>
+// The commit message should read: <br>
+// "Commit 5 - Sum Array".
+// <hr></hr>
