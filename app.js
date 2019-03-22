@@ -23,3 +23,15 @@
     }
   }
 console.log(checkPalindrome("racecar"));
+
+//digit sum
+const sumDigits = (digits) => { // creating a function
+  let numString = digits.toString(); // declaring a new variable for digits as a string
+  let listDigits = numString.split("");// declaring a new variable and setting it to an arroy of numbers
+  let sum = 0 // creating a variable for the output
+  for(let i = 0; i < listDigits.length; i++){//creating a loop through the array
+    sum += Number(listDigits[i])//accessing the array and adding it to the sum
+  }
+  return sum//returning sum
+}
+console.log(sumDigits(5678));
