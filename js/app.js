@@ -49,7 +49,7 @@ const sumArray = (int) => {
              }
         return total;
  }
-sumArray();
+
 
 // 6.
 
@@ -61,11 +61,12 @@ const checkPrime = (num) => {
     }
 }
 checkPrime();
-const printPrime = (checkPrime) => {
-    for (let i = 1; i < checkPrime(); i++) {
-       if (i / 1 && i / i) {
-        console.log(i);
-       } 
+const printPrime = (num) => {
+    for (let i = 0; i < num; i++) {
+        if(checkPrime(i)){
+            console.log(i);
+        }
+        
     }
 }
-// can't figure out how to call checkPrime into the printPrime function to log the primes counting up. 
+
