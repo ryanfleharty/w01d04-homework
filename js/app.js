@@ -19,7 +19,7 @@
 // also they are objects. (delete before push)
 const checkPalindrome = (str) => {
     var reg = /[\W_]/g;
-    str = str.toUpperCase().replace(reg, '');
+    str = str.toLowerCase().replace(reg, '');
     var len = str.length;
     for ( var i = 0; i <len/2; i++) {
         if (str[i] !== str[len - 1 - 1]) {
@@ -29,8 +29,9 @@ const checkPalindrome = (str) => {
     }
     
 }
-checkPalindrome("radar");
-console.log(checkPalindrome("radar"));
+checkPalindrome("Radar");
+checkPalindrome("Borscht");
+console.log(checkPalindrome("Radar"));
 console.log(checkPalindrome("Borscht"));
 
 //
