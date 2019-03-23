@@ -46,3 +46,32 @@ const sumArray = (a, b) => a + b
 
 const sum = arr.reduce(sumArray);
 console.log(sum);
+
+//6 Prime Numbers
+//step 1
+const checkPrime = (num) => {
+    for(let i = 2; i < num; i++)
+        if(num % i === 0)
+            return false;
+    	return num > 1;
+}
+checkPrime(10);
+//=>false
+checkPrime(7);
+//=>true
+
+//step 2
+const checkPrime = (num) => {
+    for(let i = 2; i < num; i++)
+        if(num % i === 0)
+            return false;
+    	return num > 1;
+}
+
+
+printPrimes(num) => {
+	for(let i = 2; i <= 100; i++)
+	console.log([num[i]]);
+}
+
+
