@@ -27,7 +27,7 @@
 //false if not. Make sure your function will give the correct 
 //answer for words with capital letters.
 
-const checkPalindrom = (str) => {
+const checkPalindrome = (str) => {
     let isItAPalindrome = str.split('').reverse().join('');
     if (str === isItAPalindrome) {
         return str + ' is a palindrome.';
@@ -37,26 +37,27 @@ const checkPalindrom = (str) => {
     }
   }
 
-  console.log(checkPalindrom('madams'));
+  console.log(checkPalindrome('madams'));
 
 
 
-//3. 3. Digit Sum
+//3. Digit Sum
 //Write a function sumDigits that accepts a number and returns the 
 //sum of its digits.
-//NOT WORKING
 
-
-let sum = 0;
+//FIGURED THIS ONE OUT 
 
 const sumDigits = (num) => {
-    for (var i = 0; i <= num.length; i++) {
-        sum += num[i];
-      }
-      
+    let x =  num;
+    let sum = 0;
+    let numbers = ("" + x).split("");
+    for(let i = 0; i < numbers.length; i++){
+    sum += +numbers[i];
     }
-    
-    console.log(sumDigits(1223));
+    return sum;
+ }
+
+console.log(sumDigits(1223));
 
 
 
@@ -84,16 +85,19 @@ calculateSide(8, 6);
 //should contain numbers. The function should return the sum of the numbers 
 //in the array.
 //Expected result: console.log(sumArray([1, 2, 3, 4, 5, 6]));
-// WHY ISN'T THIS WORKING? SAME ISSUE AS #3.
+
+// FIGURED THIS ONE OUT TOO
+
+let total = 0;
 
 const sumArray = (arr) => {
-    let total = 0;
     for (let i = 0; i < arr.length; i++) {
-      total += arr[i]
+        total += arr[i];
+        console.log(total);
     }
 }
 
-sumArray(1, 2, 3, 4, 5, 6);
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 //6. Prime Numbers
@@ -108,7 +112,6 @@ sumArray(1, 2, 3, 4, 5, 6);
 //number is Prime. The function will return true (Boolean) if 
 //Prime, false if not. Hint: Check every number up to the square 
 //root. To do this, try a for loop.
-
 
 const checkPrime = (num) => {
     for (let i = 2; i < num; i++) {
@@ -128,14 +131,20 @@ console.log(checkPrime(42));
 //example, if you invoke your function with printPrimes(97), 
 //it will print all the Prime numbers up to and including 97. 
 //This function can call on the previous checkPrime function.
-//I JUST DON'T KNOW WHY THIS ISN'T WORKING. EVERYTHING I CAN 
-//THINK TO GOOGLE SAYS SIMILAR OR WAY MORE COMPLICATED.
 
+// FELT REALLY SILLY ONCE I WENT BACK AND LOOKED AT IT. I 
+// FAILED TO REALIZE LAST WEEK THAT I SHOULD USE THE FUNCTION
+// I JUST CREATED. HENCE PART 2.
+
+
+//check for prime
+//if prime, print
+    
 const printPrimes = (num) => {
-    //check for prime
-    //if prime, print
-    if (checkPrime(true)) {
-        console.log(num);
+    for (let i = 0; i < num; i++) {
+        if (checkPrime(i) === true) {
+            console.log(i)
+        }
     }
 }
 printPrimes(21);
